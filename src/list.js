@@ -5,6 +5,7 @@ import Card from './card.js';
 
 function List(props) {
     const cardInstance = (props.card);
+    console.log(cardInstance)
     return (
         <section className="List">
             <header className="List-header">
