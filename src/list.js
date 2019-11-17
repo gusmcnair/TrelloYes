@@ -5,13 +5,13 @@ import Card from './card.js';
 
 function List(props) {
     const cardInstance = (props.card);
-    console.log(cardInstance)
     return (
         <section className="List">
             <header className="List-header">
                 <h2>{props.header}</h2>
             </header>
             <div className="List-cards">
+                {console.log(cardInstance)}
                 {cardInstance.map(card =>
                     <Card 
                     key={card.id}
