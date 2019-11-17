@@ -4,6 +4,7 @@ import Card from './card.js';
 
 
 function List(props) {
+    console.log(props)
     const cardInstance = (props.card);
     return (
         <section className="List">

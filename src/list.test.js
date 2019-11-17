@@ -8,21 +8,21 @@ describe ('List component', () => {
         const testObject =  [{
             content: 'lorem ipsum',
             id: 'a',
-            Title: 'Twelfth card',
+            title: 'Twelfth card',
           }]
         const div = document.createElement('div');
-        ReactDOM.render(<List cardInstance={testObject} />, div);
+        ReactDOM.render(<List card={testObject} />, div);
         ReactDOM.unmountComponentAtNode(div);
 });
     it('renders UI as expected', () => {
         const testObject =  [{
             content: 'lorem ipsum',
             id: 'b',
-            Title: 'Eighth card',
+            title: 'Eighth card',
           }
         ]
         const tree = renderer
-            .create(<List cardInstance={testObject} />)
+            .create(<List card={testObject} />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     });
